@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSVE - Sistema de Vendas e Estoque</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <div class="divCentral">
+        <table class="tabela">
+            <tr>
+                <td colspan="2">
+                    <h2>Login</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtLogin">Login</label>
+                </td>
+                <td>
+                    <input type="text" id="txtLogin"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtPassword">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="txtPassword"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                   <span id="txtMsg" class="msg"></span>   
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="Tdireita">
+                    <button id="btnLogin" onclick="login();">Entrar</button>                    
+                </td>            
+            </tr>
+            <tr>
+                <td colspan="2" class="Tdireita">
+                    <a href="#">Esqueci minha senha</a> 
+                </td>
+            </tr>
+        </table>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script type="text/javascript" src="../js/supabase.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
+
+</body>
+</html>

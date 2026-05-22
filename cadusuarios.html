@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSVE - Sistema de Vendas e Estoque</title>
+    <link rel="Stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <form id="frmCadUsuario">
+        <table style="width:device-width;position:relative;margin:0 auto;">
+            <tr>
+                <td colspan="4">
+                    <h2>Cadastro de Usuários</h2>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 166px;">
+                    Nome Completo
+                </td>
+                <td colspan="4">
+                    <input type="text" id="txtnomeCompleto" style="width: 600px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Login
+                </td>
+                <td style="width: 210px">
+                    <input type="text" id="txtUsuario" required/>
+                </td>
+                <td>
+                    Senha
+                </td>
+                <td>
+                    <input type="password" id="txtSenha" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td colspan="4">
+                    <input type="text" id="txtEmail" style="width: 590px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Status
+                </td>
+                <td colspan="4">
+                    <select id="rdlStatus">
+                        <option value="1">Ativo</option>
+                        <option value="0">Inativo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label id="msg"></label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" id="btCadastrar" value="Cadastrar"/>
+                    <input type="button" id="btGravar" value="Gravar" />
+                    <input type="button" id="btCancelar" value="Cancelar" />
+                    <input type="button" id="btExcluir" value="Excluir" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: right;">
+                    <a>Pesquisar </a><input type="text" id="txtBusca" placeholder="Pesquisar usuário..." style="width: 300px;padding: 8px;margin-bottom: 10px;font-style: italic;"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="hidden" id="hidId" value="0">
+                    <table id="GridView1">
+                        <thead>
+                            <tr>
+                                <td>Nome Completo</td>
+                                <td>Login</td>
+                                <td>E-mail</td>
+                                <td>Status</td>                                
+                            </tr>
+                        </thead>
+                        <tbody id="GridBody">                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <button id="btnAnterior"><< Anterior</button>
+                                    <span id="paginaInfo"></span>
+                                    <button id="btnProximo">Próxima >></button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="text/javascript" src="../js/supabase.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/cadusuarios.js"></script> 
+</body>
+</html>

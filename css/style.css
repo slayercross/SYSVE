@@ -1,0 +1,119 @@
+html, body {
+        height: 100%;
+        margin: 0;        
+    }
+
+    .divCentral {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .tabela{
+        padding: 15px;
+        border: 1px solid #C0C0C0;
+        background-color: #f8f8f8;
+        box-shadow: 5px 5px 15px #000;
+        border-radius: 15px;
+        font-family: Arial;
+        width: 290px;
+    }
+        .tabela .Tdireita{
+            text-align: right;            
+        }
+        .tabela h2{
+            padding: 0px !important;
+            margin: 0px !important;
+            display: inline !important;
+
+        }
+        .tabela a{
+            text-decoration: none;            
+            font-size: 10pt;
+            font-style: italic;            
+        }
+        .tabela input{
+            padding: 5px;
+        }
+        .tabela .msg{
+            font-size: 9pt;            
+        }
+
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+    }
+    table {
+        width: 100%;
+    }
+    input,
+    select,
+    button {
+        padding: 8px;
+    }
+    #GridView1 {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+    #GridView1 thead {
+        background-color: #2c3e50;
+        color: white;
+    }
+    #GridView1 thead td {
+        padding: 10px;
+        border: 1px solid #1a252f;
+        font-weight: bold;
+    }
+    #GridView1 tbody td {
+        padding: 8px;
+        border: 1px solid #dcdcdc;
+    }
+    #GridView1 tbody tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+    #GridView1 tbody tr:hover {
+        background-color: #d6eaff;
+        cursor: pointer;
+    }
+    #GridView1 tbody tr.selected {
+        background-color: #74b9ff !important;
+        color: white;
+    }
+    #GridView1 tfoot td {
+        padding: 10px;
+        border: 1px solid #dcdcdc;
+        text-align: right;
+        background-color: #fafafa;
+    }
+    .btn-grid {
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        color: white;
+        margin-right: 5px;
+    }
+    .btn-edit {
+        background-color: #0984e3;
+    }
+    .btn-delete {
+        background-color: #d63031;
+    }
+    #msg {
+        font-weight: bold;
+    }
+    .loading {
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: #0984e3;
+    }
+    .pagination {
+        margin-top: 10px;
+        text-align: right;       
+    }
+    .pagination button {
+        margin-left: 5px;
+        padding: 5px 10px;
+    }

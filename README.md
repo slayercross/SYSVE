@@ -1,2 +1,2 @@
 # SYSVE
-Sistema de 
+Sistema de Vendas e Estoque
